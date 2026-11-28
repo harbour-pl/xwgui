@@ -559,6 +559,7 @@ typedef void ( *DirAction )( const char *name, xBool directory, void *data );
 
 XWGUI_API xBool DirCreate( const char *path );
 XWGUI_API xBool DirExists( const char *path );
+XWGUI_API char *DirTemp( char *buffer, size_t size );
 XWGUI_API void  DirScan( const char *path, DirAction action, void *data );
 
 /* ---------------------------------------------------------------------------------------------
